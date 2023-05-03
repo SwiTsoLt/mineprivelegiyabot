@@ -27,7 +27,7 @@ async function getProfileMessage(userInfo) {
     await mongo.login(userInfo);
     return getProfileMessage(userInfo);
   }
-  return `📋 Информация о [${user.first_name}](t.me/${user.username})\n\nUID: \`${user._id}\`\n🆔: \`${user.id}\`\n💸 Денег: ${user.money} руб\n🍯 Золото: ${user.gold} G\n\n💵 Всего пополено: на ${user.total_replenished} ₽\n🍯 Всего выведено: ${user.total_withdrawn} G`;
+  return `📋 Информация о [${user.first_name}](t.me/${user.username})\n\nUID: \`${user._id}\`\n🆔: \`${user.id}\`\n💸 Денег: ${user.money} руб\n🍯 Золото: ${user.gold} G\n\n💵 Всего пополнено: на ${user.total_replenished} ₽\n🍯 Всего выведено: ${user.total_withdrawn} G`;
 }
 
 async function getBuyGoldMessage(userInfo) {
