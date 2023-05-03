@@ -61,7 +61,7 @@ function startBot() {
     if (currentMode === "support_question") {
       currentMode = null;
       if (
-        !Object.keys(text_data.textCommand).includes(message.text) &&
+        !Object.keys(text_data.textCommand).includes(message.text) ||
         !Object.keys(text_data.messageList).includes(message.text)
       ) {
         const response_message = await my_functions.sendSupportQuestion(
