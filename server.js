@@ -25,6 +25,7 @@ function startBot() {
       text_data.messageList.start,
       text_data.buttons
     );
+    return;
   });
 
   bot.on("message", async (message) => {
