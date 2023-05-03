@@ -104,11 +104,6 @@ function startBot() {
           text_data.propsList[message.text] || {}
         );
       }
-      return my_functions.send(
-        bot,
-        message,
-        text_data.messageList.dontunderstand
-      );
     }
   });
 
