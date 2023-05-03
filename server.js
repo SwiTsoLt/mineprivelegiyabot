@@ -110,11 +110,6 @@ function startBot() {
         text_data.messageList.dontunderstand
       );
     }
-    return my_functions.send(
-      bot,
-      message,
-      text_data.messageList.dontunderstand
-    );
   });
 
   bot.on("callback_query", (message) => {
